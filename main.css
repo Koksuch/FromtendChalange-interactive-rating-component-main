@@ -1,0 +1,129 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --mediumBlue: hsl(210, 22%, 20%);
+    --darkBlue: hsl(213, 19%, 16%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+    /* ### Body Copy
+
+    - Font size (paragraph): 15px
+
+    ### Font
+
+    - Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+    - Weights: 400, 700 */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+body {
+    color: var(--white);
+    background-color: var(--veryDarkBlue);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+main {
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    background-color: var(--darkBlue);
+}
+main .star {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    padding: 12px 0;
+    margin-bottom: 15px;
+    justify-content: center;
+    background-color: var(--mediumBlue);
+    border-radius: 50px;
+}
+main h3 {
+    font-weight: 600;
+}
+main p {
+    font-size: 15px;
+    margin: 15px 0;
+}
+.rates {
+    display: flex;
+    justify-content: space-between;
+}
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    color: var(--mediumGrey);
+    background-color: var(--mediumBlue);
+    cursor: pointer;
+}
+.btn:focus {
+    background-color: var(--lightGrey);
+    color: var(--white);
+}
+.btn:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+.sbt {
+    width: 100%;
+    height: 40px;
+    margin: 15px 0 10px 0;
+    border-radius: 50px;
+    border: none;
+    letter-spacing: 3px;
+    color: var(--white);
+    background-color: var(--orange);
+    cursor: pointer;
+}
+.sbt:hover
+{
+    background-color: var(--white);
+    color: var(--orange);
+}
+footer {
+    padding: 20px;
+    background-color: var(--darkBlue);
+}
+.attribution { 
+    font-size: 15px; text-align: center; 
+}
+.attribution a { 
+    color: var(--orange); 
+}
+.thank-img {
+    text-align: center;
+}
+.sel-rate-div {
+    display: flex;
+    justify-content: center;
+}
+.sel-rate {
+    background-color: var(--mediumBlue);
+    color: var(--orange);
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+.thank {
+    text-align: center;
+}
+.thank-txt {
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    color: var(--mediumGrey);
+}
